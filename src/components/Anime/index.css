@@ -1,0 +1,91 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+/* Background Container */
+.bg-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+    max-height: 100vh; 
+    width: 90vw;
+    background-color: #000000;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+   
+    overflow: auto; 
+}
+
+/* Lottie Container */
+.lottie-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 20px;
+    max-height: 100%; 
+    overflow: auto; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; 
+        padding: 15px;
+        height: auto; 
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .bg-container {
+        padding: 10px;
+    }
+
+    .lottie-container {
+        gap: 10px; 
+    }
+}
+
+/* Extra Small devices (phones, 375px and below) */
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .lottie-container {
+        gap: 8px; 
+    }
+}
