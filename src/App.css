@@ -1,38 +1,65 @@
-.App {
+/* MyApp.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e1e5eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background-color: rgb(190, 184, 184);
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 400px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calendar-container {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.react-calendar {
+  width: 100%;
+  background: rgb(168, 205, 229);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.react-calendar__tile--active {
+  background-color: #3498db;
   color: white;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.react-time-picker {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-time-picker__wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.react-time-picker__inputGroup__input {
+  /* font-size: 1.2rem; */
+  color: #34495e;
+}
+
+.selected-datetime {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 15px;
 }
